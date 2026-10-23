@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>Wallpaper Runner — 壁纸同源自动跑酷</title>
+<style>
+  :root { color-scheme: dark; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body {
+    width: 100%; height: 100%; overflow: hidden;
+    background: #12070a;
+  }
+  body {
+    display: flex; align-items: center; justify-content: center;
+  }
+  /* the artwork keeps the wallpaper's own 16:10 frame; the surrounding
+     area repeats the wallpaper's darkest purple so letterboxing looks
+     deliberate instead of broken */
+  #stage {
+    position: relative;
+    background: #12070a;
+    box-shadow: 0 0 0 1px #2f2138, 0 18px 60px rgba(0, 0, 0, .55);
+    line-height: 0;
+  }
+  canvas {
+    display: block;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;
+  }
+</style>
+</head>
+<body>
+<div id="stage"><canvas id="game" width="640" height="400"></canvas></div>
+<script>
+/*__GAME__*/
+</script>
+</body>
+</html>

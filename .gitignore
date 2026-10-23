@@ -1,0 +1,11 @@
+# generated / local-only
+frames/
+__pycache__/
+*.pyc
+
+# your own source wallpaper (bring your own)
+wallpaper.png
+wallpaper.jpg
+
+# tool noise
+*.log

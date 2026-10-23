@@ -1,0 +1,14 @@
+{
+  "name": "wallpaper-runner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Auto-running pixel runner whose art is extracted from a desktop wallpaper. Single file, zero dependencies.",
+  "scripts": {
+    "test": "node test/smoke.cjs && node test/wrap_test.cjs && node test/pickup_test.cjs && node test/unit_sprite.cjs",
+    "test:soak": "node test/soak.cjs 300",
+    "test:perf": "node test/perf.cjs",
+    "build": "python tools/build.py",
+    "render": "node test/record.cjs 25 7"
+  },
+  "license": "MIT"
+}
